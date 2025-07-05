@@ -64,7 +64,7 @@ const Hero = () => {
                 className="transform bg-rose-400 px-8 py-3 text-lg text-white transition-all duration-300 hover:scale-105 hover:bg-rose-600"
                 onClick={scrollToContact}
               >
-                Agendar Consulta
+                Agendamento
               </Button>
               <Button
                 variant="outline"
@@ -101,7 +101,7 @@ const Hero = () => {
                   <div className="text-8xl text-rose-600">
                     {" "}
                     <Image
-                      src="/carol.png"
+                      src="/test.jpg"
                       alt="carol"
                       width={300}
                       height={300}
