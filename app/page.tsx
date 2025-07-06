@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Hero from "@/components/hero";
 import Navigation from "@/components/navigation";
 import Services from "@/components/services";
@@ -13,6 +14,7 @@ const Home = () => {
         <About />
         <Services />
         <Testimonials />
+        <Contact />
       </main>
     </div>
   );

@@ -131,7 +131,7 @@ const Testimonials = () => {
           {/* Stats */}
           <div className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-8 md:grid-cols-3">
             <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-rose-600">500+</div>
+              <div className="mb-2 text-3xl font-bold text-rose-600">300+</div>
               <div className="text-rose-700">Clientes Satisfeitas</div>
             </div>
             <div className="text-center">
@@ -139,7 +139,7 @@ const Testimonials = () => {
               <div className="text-rose-700">Avaliação Média</div>
             </div>
             <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-rose-600">98%</div>
+              <div className="mb-2 text-3xl font-bold text-rose-600">90%</div>
               <div className="text-rose-700">Taxa de Retorno</div>
             </div>
           </div>
