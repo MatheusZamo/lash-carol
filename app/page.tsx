@@ -1,6 +1,8 @@
 import About from "@/components/about";
 import Hero from "@/components/hero";
 import Navigation from "@/components/navigation";
+import Services from "@/components/services";
+import Testimonials from "@/components/testimonials";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <main>
         <Hero />
         <About />
+        <Services />
+        <Testimonials />
       </main>
     </div>
   );
