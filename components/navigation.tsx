@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, Sparkles, X } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,10 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <div className="text-2xl font-bold text-rose-400">Lash Carol</div>
+          <div className="flex gap-2 text-2xl font-bold text-rose-400">
+            <Sparkles className="h-6 w-6 pt-1 text-rose-600 transition-all duration-300 group-hover:animate-spin" />
+            Lash Carol
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden space-x-8 md:flex">
@@ -41,7 +44,7 @@ export default function Navigation() {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-rose-400 capitalize transition-colors hover:text-rose-500"
+                  className="cursor-pointer text-rose-400 capitalize transition-colors hover:text-rose-500"
                 >
                   {item === "servicos" ? "serviços" : item}
                 </button>

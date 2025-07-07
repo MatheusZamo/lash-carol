@@ -24,7 +24,7 @@ const About = () => {
   }, []);
 
   const stats = [
-    { icon: Users, number: "500+", label: "Clientes Satisfeitas" },
+    { icon: Users, number: "250+", label: "Clientes Satisfeitas" },
     { icon: Award, number: "3+", label: "Anos de Experiência" },
     { icon: Heart, number: "100%", label: "Dedicação" },
     { icon: Clock, number: "1:30", label: "Duração Média" },
