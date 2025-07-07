@@ -22,6 +22,8 @@ const Footer = () => {
     return () => observer.disconnect();
   }, []);
 
+  const year = new Date().getFullYear();
+
   return (
     <footer
       id="footer"
@@ -110,7 +112,7 @@ const Footer = () => {
           <div className="border-t border-rose-700 pt-8">
             <div className="flex flex-col items-center justify-between md:flex-row">
               <p className="mb-4 text-sm text-rose-200 md:mb-0">
-                &copy; 2024 Lash Carol Silva. Todos os direitos reservados.
+                &copy; {year} Lash Carol Silva. Todos os direitos reservados.
               </p>
 
               {/* Crédito do desenvolvedor */}
