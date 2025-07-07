@@ -11,7 +11,7 @@ const Hero = () => {
   const [floatingEleents, setFloatingElements] = useState<
     Array<{ id: number; x: number; y: number; delay: number }>
   >([]);
-
+  console.log(floatingEleents);
   useEffect(() => {
     setIsVisible(true);
 
