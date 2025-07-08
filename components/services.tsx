@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Eye, Sparkles, Zap, Crown, Star } from "lucide-react";
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,10 +26,9 @@ const Services = () => {
 
   const services = [
     {
-      icon: Eye,
       title: "Extensão Clássica",
       description:
-        "Técnica tradicional que adiciona um fio sintético para cada cílio natural, criando um look elegante e natural.",
+        "Técnica tradicional que adiciona um fio sintético para cada cílio natural, criando um look elegante.",
       price: "R$ 120",
       duration: "2h",
       features: [
@@ -41,7 +39,6 @@ const Services = () => {
       popular: false,
     },
     {
-      icon: Sparkles,
       title: "Volume Russo",
       description:
         "Técnica avançada que utiliza múltiplos fios ultrafinos para criar volume e densidade incríveis.",
@@ -51,7 +48,6 @@ const Services = () => {
       popular: true,
     },
     {
-      icon: Zap,
       title: "Híbrido",
       description:
         "Combinação perfeita entre clássico e volume, oferecendo naturalidade com um toque de glamour.",
@@ -61,7 +57,6 @@ const Services = () => {
       popular: false,
     },
     {
-      icon: Crown,
       title: "Mega Volume",
       description:
         "Para quem deseja o máximo em volume e drama. Técnica premium para ocasiões especiais.",
@@ -71,7 +66,6 @@ const Services = () => {
       popular: false,
     },
     {
-      icon: Star,
       title: "Lifting de Cílios",
       description:
         "Curvatura natural dos seus próprios cílios com tinta, realçando o olhar sem extensões.",
@@ -123,9 +117,6 @@ const Services = () => {
                 )}
 
                 <CardHeader className="pb-4 text-center">
-                  <div className="mx-auto mb-4 w-fit rounded-full bg-rose-100 p-3">
-                    <service.icon className="h-8 w-8 text-rose-600" />
-                  </div>
                   <CardTitle className="text-xl text-rose-800">
                     {service.title}
                   </CardTitle>
@@ -158,7 +149,7 @@ const Services = () => {
                   </ul>
 
                   <Button
-                    className={`mt-4 w-full transition-all duration-300 ${
+                    className={`mt-4 w-full cursor-pointer transition-all duration-300 ${
                       service.popular
                         ? "bg-rose-500 text-white hover:bg-rose-600"
                         : "bg-rose-100 text-rose-700 hover:bg-rose-200"
