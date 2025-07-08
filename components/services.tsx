@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Eye, Sparkles, Zap, Crown } from "lucide-react";
+import { Eye, Sparkles, Zap, Crown, Star } from "lucide-react";
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -70,6 +70,17 @@ const Services = () => {
       features: ["Volume extremo", "Duração 4-6 semanas", "Efeito dramático"],
       popular: false,
     },
+    {
+      icon: Star,
+      title: "Lifting de Cílios",
+      description:
+        "Curvatura natural dos seus próprios cílios com tinta, realçando o olhar sem extensões.",
+      price: "R$ 80",
+      duration: "1h30",
+      features: ["Cílios naturais", "Duração 6-8 semanas", "Baixa manutenção"],
+      popular: false,
+      color: "from-rose-200 to-pink-200",
+    },
   ];
 
   return (
@@ -94,7 +105,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {services.map((service, index) => (
               <Card
                 key={index}

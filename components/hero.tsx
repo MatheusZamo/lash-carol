@@ -25,8 +25,8 @@ const Hero = () => {
     setFloatingElements(elements);
   }, []);
 
-  const scrollToContact = () => {
-    const element = document.getElementById("contato");
+  const scrollToSection = (id: string) => {
+    const element = document.querySelector(`#${id}`);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -142,8 +142,8 @@ const Hero = () => {
               <div className="flex flex-col justify-center gap-3 sm:flex-row lg:justify-start lg:gap-4">
                 <Button
                   size="lg"
-                  className="w-full transform bg-rose-500 px-6 py-3 text-base text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-rose-600 sm:w-auto lg:px-8 lg:py-4 lg:text-lg"
-                  onClick={scrollToContact}
+                  className="w-full transform cursor-pointer bg-rose-500 px-6 py-3 text-base text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-rose-600 sm:w-auto lg:px-8 lg:py-4 lg:text-lg"
+                  onClick={() => scrollToSection("contato")}
                 >
                   <CalendarHeart className="mr-2 h-4 w-4 lg:h-5 lg:w-5" />
                   Agendar
@@ -151,7 +151,8 @@ const Hero = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full transform border-rose-500 bg-white/80 px-6 py-3 text-base text-rose-600 transition-all duration-300 hover:scale-105 hover:bg-rose-50 sm:w-auto lg:px-8 lg:py-4 lg:text-lg"
+                  className="w-full transform cursor-pointer border-rose-500 bg-white/80 px-6 py-3 text-base text-rose-600 transition-all duration-300 hover:scale-105 hover:bg-rose-50 sm:w-auto lg:px-8 lg:py-4 lg:text-lg"
+                  onClick={() => scrollToSection("servicos")}
                 >
                   <EyeClosed className="mr-2 h-4 w-4 lg:h-7 lg:w-7" />
                   Técnicas

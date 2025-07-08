@@ -34,7 +34,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Maria Silva",
-      text: "Simplesmente perfeito! Os cílios ficaram naturais e duradouros. A profissional é muito cuidadosa e atenciosa.",
+      text: "Simplesmente perfeito! Os cílios ficaram naturais e duradouros. A Carol é muito cuidadosa e atenciosa.",
       rating: 5,
       service: "Volume Russo",
     },
@@ -46,7 +46,7 @@ const Testimonials = () => {
     },
     {
       name: "Juliana Santos",
-      text: "Profissional incrível! Explicou todo o processo e o resultado superou minhas expectativas.",
+      text: "Incrível! Explicou todo o processo e o resultado superou minhas expectativas.",
       rating: 5,
       service: "Híbrido",
     },

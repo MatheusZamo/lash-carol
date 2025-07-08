@@ -34,7 +34,7 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex gap-2 text-2xl font-bold text-rose-400">
             <Sparkles className="h-6 w-6 pt-1 text-rose-600 transition-all duration-300 group-hover:animate-spin" />
-            Lash Carol
+            Lash Carol Silva
           </div>
 
           {/* Desktop Menu */}

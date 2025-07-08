@@ -39,10 +39,10 @@ const About = () => {
           }`}
         >
           <div className="mb-16 text-center">
-            <h2 className="mb-6 text-4xl font-bold text-rose-400 md:text-5xl">
+            <h2 className="mb-6 text-4xl font-bold text-rose-800 md:text-5xl">
               Sobre Mim
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-rose-400">
+            <p className="mx-auto max-w-3xl text-lg text-rose-700">
               Sou uma lash designer apaixonada por realçar a beleza natural de
               cada cliente. Com técnicas avançadas e produtos de alta qualidade,
               transformo olhares e elevo a autoestima.
@@ -51,7 +51,7 @@ const About = () => {
 
           <div className="mx-auto mb-16 max-w-4xl">
             <div className="space-y-6 text-center">
-              <p className="text-lg leading-relaxed text-rose-400">
+              <p className="text-lg leading-relaxed text-rose-700">
                 Acredito que cada pessoa possui uma beleza única que merece ser
                 destacada. Meu trabalho vai além da técnica é sobre entender o
                 estilo de vida, personalidade e desejos de cada cliente para
@@ -68,10 +68,10 @@ const About = () => {
               >
                 <CardContent className="p-6 text-center">
                   <stat.icon className="mx-auto mb-4 h-8 w-8 text-rose-500" />
-                  <div className="mb-2 text-2xl font-bold text-rose-400">
+                  <div className="mb-2 text-2xl font-bold text-rose-700">
                     {stat.number}
                   </div>
-                  <div className="text-sm text-rose-400">{stat.label}</div>
+                  <div className="text-sm text-rose-700">{stat.label}</div>
                 </CardContent>
               </Card>
             ))}

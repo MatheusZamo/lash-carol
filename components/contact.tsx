@@ -35,12 +35,12 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      info: "(11) 99999-9999",
+      info: "(31) 97302-5556",
     },
     {
       icon: Instagram,
       title: "Instagram",
-      info: "@lashCarol.com",
+      info: "@lashcarolsilva",
     },
     {
       icon: Clock,
@@ -82,14 +82,14 @@ const Contact = () => {
                     Agende pelo WhatsApp
                   </h3>
                   <p className="text-rose-700">
-                    Entre em contato para agendar sue horário
+                    Entre em contato para agendar seu horário
                   </p>
                 </div>
                 <Button
                   className="w-full transform bg-green-500 py-4 text-lg text-white transition-all duration-300 hover:scale-105 hover:bg-green-600"
                   onClick={() =>
                     window.open(
-                      "https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta para extensão de cílios.",
+                      "https://wa.me/5531973025556?text=Olá! Gostaria de agendar uma extensão de cílios.",
                       "_blank",
                     )
                   }

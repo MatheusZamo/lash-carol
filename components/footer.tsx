@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Instagram, MessageCircle, MapPin, Phone, Mail } from "lucide-react";
+import { Instagram, MessageCircle, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,7 +66,7 @@ const Footer = () => {
                   (item, index) => (
                     <li key={item}>
                       <button
-                        className="transform text-rose-200 transition-all duration-300 hover:translate-x-2 hover:text-white"
+                        className="transform cursor-pointer text-rose-200 transition-all duration-300 hover:translate-x-2 hover:text-white"
                         onClick={() => {
                           const element = document.getElementById(
                             item.toLowerCase().replace("ç", "c"),
@@ -98,11 +98,11 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-rose-200 transition-colors duration-300 hover:text-white">
                   <Phone className="h-4 w-4" />
-                  <span className="text-sm">(11) 99999-9999</span>
+                  <span className="text-sm">(31) 97302-5556</span>
                 </div>
                 <div className="flex items-center space-x-3 text-rose-200 transition-colors duration-300 hover:text-white">
-                  <Mail className="h-4 w-4" />
-                  <span className="text-sm">contato@lashstudio.com</span>
+                  <Instagram className="h-4 w-4" />
+                  <span className="text-sm">@lashcarolsilva</span>
                 </div>
               </div>
             </div>
@@ -118,7 +118,9 @@ const Footer = () => {
               {/* Crédito do desenvolvedor */}
               <div className="flex items-center space-x-2 text-sm text-rose-200">
                 <span className="cursor-pointer font-semibold text-rose-100 transition-colors duration-300 hover:text-white">
-                  Desenvolvido por Mh Developer
+                  <a href="https://mh-developer.vercel.app/" target="_blank">
+                    Desenvolvido por Mh Developer
+                  </a>
                 </span>
               </div>
             </div>
